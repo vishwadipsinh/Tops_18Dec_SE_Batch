@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1</title>
+</head>
+
+<body>
+    <fieldset style="border-width: 40%; height: 200%; background-color: rgb(118, 242, 244); height: 150%; width: 40%;">
+        <caption>
+            <h1 align="center">Student Registration Form</h1>
+        </caption>
+        <hr style="border-color: white; max-width: 90%;">
+        <form action="" align="center">
+            <table>
+                <tr align="left">
+                    <td>Firstname :</td>
+                </tr>
+                <tr align="left">
+                    <td><input type="text" placeholder="Firstname" style="width:100%;" maxlength="10"><br><br></td>
+                </tr>
+
+                <tr align="left">
+                    <td>Middlename :</td>
+                </tr>
+                <tr align="left">
+                    <td><input type="text" placeholder="Middlename" style="width:100%;" maxlength="10"><br><br></td>
+                </tr>
+                <tr align="left">
+                    <td>Lastname :</td>
+                </tr>
+                <tr align="left">
+                    <td><input type="text" placeholder="Lastname" style="width:100%;" maxlength="10"><br><br></td>
+                </tr>
+                <tr align="left">
+                    <td>
+                        <label for="Course">Course : &nbsp;</label>
+                        <select name="course" id="course">
+                            <option value="Course">Course</option>
+                            <option value="B.Sc">B.Sc</option>
+                            <option value="B.Tech">B.Tech</option>
+                            <option value="B.Com">B.Com</option>
+                        </select>
+                        <br><br>
+                    </td>
+                </tr>
+                <tr align="left">
+                    <td>
+                        <label for="gender">Gender :</label>
+                        <input type="radio" name="gender" checked>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender">
+                        <label for="other">Other</label>
+                        <br><br>
+                    </td>
+                </tr>
+                <tr align="left">
+                    <td>
+                        <label for="phone">Phone :</label>
+                        <input type="text" placeholder="Number" value="+91" style="width:100%;" size="13" maxlength="13"
+                            minlength="13"><br><br>
+                        <input type="text" placeholder="phone no." style="width:100%;"><br><br>
+
+
+
+                        <!-- <textarea name="" id="number" cols="70" rows="1" placeholder="+91"></textarea>
+                        <textarea name="" id="number" cols="70" rows="1" placeholder="phone no" value="+91"></textarea> -->
+                        <!-- <input type="text" value="+91"><br><br>
+                        <input type="text" placeholder="phone no." -->
+                    </td>
+                </tr>
+                <tr align="left">
+                    <td>Current Address :<br><br></td>
+                </tr>
+                <tr align="left">
+                    <td><textarea name="" id="address" cols="70" rows="4" placeholder="Current Address"></textarea>
+                    </td>
+                    <br><br>
+                </tr>
+                <tr align="left">
+                    <td>
+                        <label for="email">Email</label><br>
+                        <input type="email" placeholder="Enter Email" style="width:100%;">
+                        <br><br>
+                    </td>
+                </tr>
+                <tr align="left">
+                    <td>
+                        <label for="Password">Password</label><br>
+                        <input type="password" placeholder="Enter Password" style="width:100%;" maxlength="25">
+                        <br><br>
+                    </td>
+                </tr>
+                <tr align="left">
+                    <td>
+                        <label for="Password">Re-type Password</label><br>
+                        <input type="password" placeholder="Re-type Password" style="width:100%;" maxlength="25">
+                        <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="Register"
+                            style="width:100%; background-color: green; color: white;">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </fieldset>
+</body>
+
+</html>

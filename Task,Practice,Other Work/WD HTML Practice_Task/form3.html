@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 3</title>
+</head>
+
+<body>
+    <fieldset style="width: 30%;">
+        <legend align="left">Customer</legend>
+        <Form align="left">
+            <table cellspacing="5px" align="left">
+                <tr align="left">
+                    <td>Name<sup style="color: red;" class="star">*</sup></td>
+                    <td><input type="text" required style="width: 100%;"></td>
+                </tr>
+                <tr align="left">
+                    <td>Email<sup style="color: red;" class="star">*</sup></td>
+                    <td><input type="email" style="width: 130%;" required></td>
+                </tr>
+                <tr align="left">
+                    <td>Investment</td>
+                    <td>
+                        <select name="investment" id="investment" style="width: 105%;">
+                            <option value="Equity">Equity</option>
+                            <option value="Mutual Fund">Mutual Fund</option>
+                            <option value="Crypto">Crypto</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr align="left">
+                    <td>Date Joined<sup style="color: red;" class="star">*</sup></td>
+                    <td><input type="date" required></td>
+                </tr>
+                <tr align="left">
+                    <td>Active</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </table>
+        </Form>
+    </fieldset> <br>
+    <table>
+        <input type="submit" value="OK" style="background-color: lightgrey;">
+        <input type="submit" value="Cancel" style="background-color: lightgrey;">
+    </table>
+</body>
+
+</html>
