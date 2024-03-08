@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 5 Updated</title>
+</head>
+<body>
+    <fieldset style="height: 60%; width: 80%; margin: auto;">
+    <h2>Membership Application</h2>
+    <span style="color: rgb(139, 138, 138);">To apply for membership please complete all question</span><br><br>
+    <hr style="width: 85%;" align="left"><br><br>
+    <form action="">
+        <table>
+            <tr>
+                <td >Name &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</td>
+                <td>
+                    <input type="text" minlength="2" maxlength="15" pattern="[a-zA-Z]{2,15}" title="Minimum 2 Characters Required and Maximum 15 characters are Allowed" required>
+                    <p align="left" style="color: rgb(119, 119, 119);">first name</p>
+                </td>
+                <td>
+                    <input type="text" minlength="2" maxlength="15" pattern="[a-zA-Z]{2,15}" title="Minimum 2 Characters Required and Maximum 15 characters are Allowed" required>
+                    <p align="left" style="color: rgb(119, 119, 119);">last name</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>
+                    <input type="text" style="width: 200%;">
+                    <p align="left" style="color: rgb(119, 119, 119);">Street Address</p>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="text" style="width: 200%;">
+                    <p align="left" style="color: rgb(119, 119, 119);">Street Address line 2</p>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="text">
+                    <p align="left" style="color: rgb(119, 119, 119);">city</p>
+                </td>
+                <td>
+                    <input type="text">
+                    <p align="left" style="color: rgb(119, 119, 119);">state/province</p>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="text">
+                    <p align="left" style="color: rgb(119, 119, 119);">postal/zip code</p>
+                </td>
+                <td>
+                    <label for="Country">&nbsp;</label>
+                        <select name="Country" id="Country" style="width: 90%; background-color: rgb(180, 180, 180);">
+                            <option value="Please Select">Please Select</option>
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="China">China</option>
+                        </select>
+                    <p align="left" style="color: rgb(119, 119, 119);">Country</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email" placeholder="ex: myname@example.com" style="width: 200%;" pattern="[a-z0-9]+@[a-z]+.[a-z]{2,3}$" required><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>Home Number</td>
+                <td>
+                    <input type="text" style="width: 30%;" maxlength="3"> &nbsp; - &nbsp;
+                    <p align="left" style="color: rgb(119, 119, 119);">Area Code</p>
+                </td>
+                <td>
+                    <input type="text" style="width: 113%;" maxlength="7">
+                    <p align="left" style="color: rgb(119, 119, 119);">Phone Number</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Cellular Number</td>
+                <td>
+                    <input type="text" style="width: 30%;" maxlength="3"> &nbsp; - &nbsp;
+                    <p align="left" style="color: rgb(119, 119, 119);">Area Code</p>
+                </td>
+                <td>
+                    <input type="text" style="width: 113%;" maxlength="7">
+                    <p align="left" style="color: rgb(119, 119, 119);">Phone Number</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Work Number</td>
+                <td>
+                    <input type="text" style="width: 30%;" maxlength="3"> &nbsp; - &nbsp;
+                    <p align="left" style="color: rgb(119, 119, 119);">Area Code</p>
+                </td>
+                <td>
+                    <input type="text" style="width: 113%;" maxlength="7">
+                    <p align="left" style="color: rgb(119, 119, 119);">Phone Number</p><br>
+                </td>
+            </tr>
+            <tr>
+                <td>Website</td>
+                <td>
+                    <input type="text" maxlength="30" placeholder="www.website.com" style="width: 200%;"><br><br>
+                </td>
+            </tr>
+        </table>
+    </form>
+</fieldset>
+</body>
+</html>

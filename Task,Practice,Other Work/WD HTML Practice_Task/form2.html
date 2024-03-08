@@ -10,11 +10,11 @@
 <body>
     <form align="left" style="background-color: rgb(192, 215, 240);"><br><br>
         <label for="">Firstname:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-        <input type="text" maxlength="10"><br><br>
+        <input type="text" minlength="2" maxlength="15" pattern="[a-zA-Z]{2,15}" title="Minimum 2 Characters Required and Maximum 15 characters are Allowed" required><br><br>
         <label for="">Middlename:&nbsp;</label>
-        <input type="text" maxlength="10"><br><br>
+        <input type="text" minlength="2" maxlength="15" pattern="[a-zA-Z]{2,15}" title="Minimum 2 Characters Required and Maximum 15 characters are Allowed" required><br><br>
         <label for="">Lastname:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-        <input type="text" maxlength="10"><br><br>
+        <input type="text" minlength="2" maxlength="15" pattern="[a-zA-Z]{2,15}" title="Minimum 2 Characters Required and Maximum 15 characters are Allowed" required><br><br>
         <label for="">Course:</label>
         <select name="course" id="course">
             <option value="">Course</option>
@@ -30,16 +30,16 @@
         <input type="radio" id="Other" name="Gender">
         <label for="Other">Other</label><BR></BR>
         <label for="">Phone:</label>
-        <input type="text" placeholder="Enter your phone Number" value="+91" style="width: 3%;">
+        <input type="text" placeholder="Enter your phone Number" style="width: 3%;" pattern="[0-9]{10}" maxlength="10" required>
         <input type="text" maxlength="10"><br><br>
         <label for="">Address</label><br>
         <textarea name="" id="" cols="90" rows="5"></textarea><br><br>
         <label for="">Email</label>
-        <input type="email"><br><br>
+        <input type="email" pattern="[a-z0-9]+@[a-z]+.[a-z]{2,3}$" required><br><br>
         <label for="">Password</label>
-        <input type="password" maxlength="25"><br><br>
+        <input type="password" minlength="8" maxlength="25" required><br><br>
         <label for="">Re-type Password</label>
-        <input type="password" maxlength="25"><br><br>
+        <input type="password" minlength="8" maxlength="25" required><br><br>
         <input type="submit">
     </form>
 </body>

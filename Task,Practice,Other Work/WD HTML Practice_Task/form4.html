@@ -12,7 +12,7 @@
     <u style="color: blue;">
         <h1 align="left" style="color: blue; "> Student Registration Form Using Table in HTML</h1>
     </u>
-    <fieldset style="border-style: dotted; width:50%; background-color: rgb(134, 86, 179);">
+    <fieldset style="border-style: dotted; width:73%; background-color: rgb(134, 86, 179);">
     <form >
         <table cellspacing="0px" cellpadding="0px" align="left" style="margin-top: 0%;">
             <div>
@@ -21,7 +21,7 @@
                     <label for="first name" style="width: 50%;">First Name</label>
                 </td>
                 <td>
-                    <input type="text" placeholder="Ghanendra">&nbsp;(Max 50 Characters Allowed) <br><br>
+                    <input type="text" placeholder="Ghanendra" minlength="2" maxlength="15" pattern="[a-zA-Z]{2,15}" title="Minimum 2 Characters Required and Maximum 15 characters are Allowed" required>&nbsp;(Max 50 Characters Allowed) <br><br>
                 </td>
             </tr>
             <tr>
@@ -29,7 +29,7 @@
                     <label for="last name" style="width: 50%;">Last Name</label>
                 </td>
                 <td>
-                    <input type="text" placeholder="Yadav">&nbsp;(Max 50 Characters Allowed) <br><br>
+                    <input type="text" placeholder="Yadav" minlength="2" maxlength="15" pattern="[a-zA-Z]{2,15}" title="Minimum 2 Characters Required and Maximum 15 characters are Allowed" required>&nbsp;(Max 50 Characters Allowed) <br><br>
                 </td>
             </tr>
             <tr>
@@ -38,7 +38,7 @@
                     <label for="email" style="width: 50%;">Email ID</label>
                 </td>
                 <td>
-                    <input type="email" placeholder="yghanendra@gmail.com"><br><br>
+                    <input type="email" placeholder="yghanendra@gmail.com" pattern="[a-z0-9]+@[a-z]+.[a-z]{2,3}$" required><br><br>
                 </td>
             </tr>
             <tr>
@@ -46,7 +46,7 @@
                     <label for="number" style="width: 50%;">Mobile Number</label>
                 </td>
                 <td>
-                    <input type="text" placeholder="7842xxxxxx" maxlength="10">&nbsp;(10 Digits Allowed)<br><br>
+                    <input type="text" placeholder="7842xxxxxx" pattern="[0-9]{10}" maxlength="10" required>&nbsp;(10 Digits Allowed)<br><br>
                 </td>
             </tr>
             <tr>
@@ -81,7 +81,7 @@
                     <label for="city" style="width: 50%;">City</label>
                 </td>
                 <td>
-                    <input type="text" placeholder="Bangalore" maxlength="50">&nbsp;(Max
+                    <input type="text" placeholder="Bangalore" pattern="[a-zA-Z]{50}" maxlength="50" required>&nbsp;(Max
                     50 Characters Allowed) <br><br>
                 </td>
             </tr>
@@ -89,7 +89,7 @@
                 <td>
                     <label for="pincode" style="width: 50%;">Pin Code</label>
                 </td>
-                <td><input type="text" placeholder="560068" maxlength="6">&nbsp;(Max 6
+                <td><input type="text" placeholder="560068" pattern="[0-9]{6}" maxlength="6">&nbsp;(Max 6
                     Numbers Allowed) <br><br>
                 </td>
             </tr>
@@ -98,7 +98,7 @@
                     <label for="state" style="width: 50%;">State</label>
                 </td>
                 <td>
-                    <input type="text" placeholder="Karnataka" maxlength="50">&nbsp;(Max
+                    <input type="text" placeholder="Karnataka" pattern="[a-zA-Z]{50}" maxlength="50" required>&nbsp;(Max
                     50 Characters Allowed) <br><br>
                 </td>
             </tr>
@@ -107,7 +107,7 @@
                     <label for="country" style="width: 50%;">Country</label>
                 </td>
                 <td>
-                    <input type="text" placeholder="India"><br><br>
+                    <input type="text" placeholder="India" pattern="[a-zA-Z]{50}" maxlength="15" required><br><br>
                 </td>
             </tr>
         </div>

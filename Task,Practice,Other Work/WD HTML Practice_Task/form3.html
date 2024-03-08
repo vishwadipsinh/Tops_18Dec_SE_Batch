@@ -14,11 +14,11 @@
             <table cellspacing="5px" align="left">
                 <tr align="left">
                     <td>Name<sup style="color: red;" class="star">*</sup></td>
-                    <td><input type="text" required style="width: 100%;"></td>
+                    <td><input type="text" style="width: 100%;" minlength="2" maxlength="15" pattern="[a-zA-Z]{2,15}" title="Minimum 2 Characters Required and Maximum 15 characters are Allowed" required></td>
                 </tr>
                 <tr align="left">
                     <td>Email<sup style="color: red;" class="star">*</sup></td>
-                    <td><input type="email" style="width: 130%;" required></td>
+                    <td><input type="email" style="width: 100%;" pattern="[a-z0-9]+@[a-z]+.[a-z]{2,3}$" required></td>
                 </tr>
                 <tr align="left">
                     <td>Investment</td>
