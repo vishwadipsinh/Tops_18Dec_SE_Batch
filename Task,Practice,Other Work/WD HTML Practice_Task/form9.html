@@ -11,33 +11,46 @@
     style="background-image: linear-gradient(90deg, rgba(71,185,221,1) 0%, rgba(218,0,255,1) 100%, rgba(255,88,229,1) 100%);">
     <fieldset style="width: 40%; margin: 12%auto; background-color: white;">
         <h3>Registration
-            <hr align="left" style=" width:5%; height: 0.2ch; background-image: linear-gradient(90deg, rgba(71,185,221,1) 0%, rgba(218,0,255,1) 100%, rgba(255,88,229,1) 100%);">
+            <hr align="left"
+                style=" width:5%; height: 0.2ch; background-image: linear-gradient(90deg, rgba(71,185,221,1) 0%, rgba(218,0,255,1) 100%, rgba(255,88,229,1) 100%);">
         </h3>
-        <form action="">
+        <form action="" method="post">
             <table border="0">
                 <tr>
                     <th align="left">Full Name&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
                     <th align="left">User Name</th>
                 </tr>
                 <tr>
-                    <td ><input type="text" placeholder="Enter your name" minlength="2" maxlength="15" pattern="[a-zA-Z]{2,15}" title="Minimum 2 Characters Required and Maximum 15 characters are Allowed" required></td>
-                    <td ><input type="text" placeholder="Enter your username" minlength="3" maxlength="10" pattern="[a-zA-Z0-9]{3,10}" required></td>
+                    <td><input type="text" placeholder="Enter your name" pattern="[a-zA-Z]{2,20}"
+                            title="Minimum 2 Characters Required and Maximum 20 characters are Allowed" required></td>
+                    <td><input type="text" placeholder="Enter your username" maxlength="10" pattern="[a-zA-Z0-9]{3,10}"
+                            title="Make Your Username with Combination of Numbers and Alphabets,Min Length 3 & Max Lemgth 10"
+                            required></td>
                 </tr>
                 <tr>
                     <th align="left">Email&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
                     <th align="left">Phone Number</th>
                 </tr>
                 <tr>
-                    <td><input type="email" placeholder="Enter your email" pattern="[a-z0-9]+@[a-z]+.[a-z]{2,3}$" required></td>
-                    <td><input type="text" placeholder="Enter your number" pattern="[0-9]{10}" maxlength="10" required></td>
+                    <td><input type="email" placeholder="Enter your email"
+                            pattern="[a-zA-Z0-9]+@[a-zA-Z]+.[a-zA-Z]{2,3}$"
+                            title="Enter Email Address in Valid Format like rahul@gmail.com" required></td>
+                    <td><input type="text" placeholder="Enter your number" pattern="[0-9]{10}" maxlength="10"
+                            title="Enter Valid Mobile Number" required>
+                    </td>
                 </tr>
                 <tr>
                     <th align="left">Password&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
                     <th align="left">Confirm Password</th>
                 </tr>
                 <tr>
-                    <td><input type="text" placeholder="Enter your Password" minlength="8" maxlength="25" required></td>
-                    <td><input type="text" placeholder="Confirm your Password" minlength="8" maxlength="25" required></td>
+                    <td><input type="text" placeholder="Enter your Password" minlength="8" maxlength="25"
+                        title="Minimum Password Length of 8 Words are Required and Maximum Length upto 25 Words Allowed"
+                        required></td>
+                    <td><input type="text" placeholder="Confirm your Password" minlength="8" maxlength="25"
+                        title="Minimum Password Length of 8 Words are Required and Maximum Length upto 25 Words Allowed"
+                        required>
+                    </td>
                 </tr>
                 <tr>
                     <th align="left">

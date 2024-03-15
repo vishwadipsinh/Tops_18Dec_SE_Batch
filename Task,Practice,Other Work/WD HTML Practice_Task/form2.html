@@ -8,13 +8,16 @@
 </head>
 
 <body>
-    <form align="left" style="background-color: rgb(192, 215, 240);"><br><br>
+    <form align="left" style="background-color: rgb(192, 215, 240);" method="post"><br><br>
         <label for="">Firstname:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-        <input type="text" minlength="2" maxlength="15" pattern="[a-zA-Z]{2,15}" title="Minimum 2 Characters Required and Maximum 15 characters are Allowed" required><br><br>
+        <input type="text" pattern="[a-zA-Z]{2,10}"
+            title="Minimum 2 Characters Required and Maximum 10 characters are Allowed" required><br><br>
         <label for="">Middlename:&nbsp;</label>
-        <input type="text" minlength="2" maxlength="15" pattern="[a-zA-Z]{2,15}" title="Minimum 2 Characters Required and Maximum 15 characters are Allowed" required><br><br>
+        <input type="text" pattern="[a-zA-Z]{2,10}"
+            title="Minimum 2 Characters Required and Maximum 10 characters are Allowed" required><br><br>
         <label for="">Lastname:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-        <input type="text" minlength="2" maxlength="15" pattern="[a-zA-Z]{2,15}" title="Minimum 2 Characters Required and Maximum 15 characters are Allowed" required><br><br>
+        <input type="text" pattern="[a-zA-Z]{2,10}"
+            title="Minimum 2 Characters Required and Maximum 10 characters are Allowed" required><br><br>
         <label for="">Course:</label>
         <select name="course" id="course">
             <option value="">Course</option>
@@ -30,16 +33,21 @@
         <input type="radio" id="Other" name="Gender">
         <label for="Other">Other</label><BR></BR>
         <label for="">Phone:</label>
-        <input type="text" placeholder="Enter your phone Number" style="width: 3%;" pattern="[0-9]{10}" maxlength="10" required>
-        <input type="text" maxlength="10"><br><br>
+        <input type="text" value="+91" style="width: 3%;">
+        <input type="text" pattern="[0-9]{10}" maxlength="10" title="Enter Valid Mobile Number" required><br><br>
         <label for="">Address</label><br>
         <textarea name="" id="" cols="90" rows="5"></textarea><br><br>
         <label for="">Email</label>
-        <input type="email" pattern="[a-z0-9]+@[a-z]+.[a-z]{2,3}$" required><br><br>
+        <input type="email" pattern="[a-zA-Z0-9]+@[a-zA-Z]+.[a-zA-Z]{2,3}$"
+            title="Enter Email Address in Valid Format like rahul@gmail.com" required><br><br>
         <label for="">Password</label>
-        <input type="password" minlength="8" maxlength="25" required><br><br>
+        <input type="password" minlength="8" maxlength="25"
+            title="Minimum Password Length of 8 Words are Required and Maximum Length upto 25 Words Allowed"
+            required><br><br>
         <label for="">Re-type Password</label>
-        <input type="password" minlength="8" maxlength="25" required><br><br>
+        <input type="password" minlength="8" maxlength="25"
+            title="Minimum Password Length of 8 Words are Required and Maximum Length upto 25 Words Allowed"
+            required><br><br>
         <input type="submit">
     </form>
 </body>

@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form 8</title>
 </head>
 
-<body style="background-image: linear-gradient(90deg,rgba(255,0,138,100),rgba(255,6,114,100),rgba(255,6,114,100));">
+<body style="background-image: linear-gradient(90deg,rgba(255,0,138,1),rgba(255,6,114,100),rgba(255,6,114,100));">
     <fieldset style="background-color: white; height: 150%; width: 38%; margin:12% auto">
-        <form action="" align="center">
+        <form action="" align="center" method="post">
             <h1 align="center">Login Form</h1>
             <table align="center" border="0">
                 <!-- <tr>
@@ -25,25 +25,32 @@
                         </td>
                     </tr> -->
                 <tr>
-                    <th rowspan="1" style=" background-image: linear-gradient(90deg,rgba(255,0,138,100),rgba(255,6,114,100),rgba(255,6,114,100));">
+                    <th rowspan="1"
+                        style=" background-image: linear-gradient(90deg,rgba(255,0,138,100),rgba(255,6,114,100),rgba(255,6,114,100));">
                         <h3 style="color: white;">Login</h3>
                     </th>
                     <td style="width: 49%;">
                         <h3>Signup</h3>
                     </td>
                 </tr>
-                <tr><td><br></td>
+                <tr>
+                    <td><br></td>
                     <td><br></td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="email" placeholder="Email Address" style="width: 200%;" pattern="[a-z0-9]+@[a-z]+.[a-z]{2,3}$" required><br><br>
+                        <input type="email" placeholder="Email Address" style="width: 200%;"
+                        pattern="[a-zA-Z0-9]+@[a-zA-Z]+.[a-zA-Z]{2,3}$"
+                        title="Enter Email Address in Valid Format like rahul@gmail.com" required><br><br>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="password" placeholder="Password" style="width: 200%;" minlength="8" maxlength="25" required>
-                        <p><a href="www.instagram.com" style="color: rgb(236, 73, 100);"align="left">Forgot Password?</a></p>
+                        <input type="password" placeholder="Password" style="width: 200%;" minlength="8" maxlength="25"
+                        title="Minimum Password Length of 8 Words are Required and Maximum Length upto 25 Words Allowed"
+                        required>
+                        <p><a href="www.instagram.com" style="color: rgb(236, 73, 100);" align="left">Forgot
+                                Password?</a></p>
                     </td>
                 </tr>
                 <tr>
@@ -53,9 +60,10 @@
                         <br><br>
                     </td>
                 </tr>
-                <tr style="align=center">
+                <tr>
                     <td>
-                        <span>&emsp;&ensp;&ensp;Not a member? <a href="www.instagram.com" style="color: rgb(236, 73, 100);;">SignUp now</a></span>
+                        <span>&emsp;&ensp;&ensp;Not a member? <a href="https://www.instagram.com"
+                                style="color: rgb(236, 73, 100);;">SignUp now</a></span>
                     </td>
                 </tr>
             </table>

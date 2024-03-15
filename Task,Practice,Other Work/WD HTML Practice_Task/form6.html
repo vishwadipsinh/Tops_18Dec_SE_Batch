@@ -8,50 +8,58 @@
 </head>
 
 <body>
-<fieldset style="height: 100%; width: 50%; margin: auto;">
-    <h1 align="center">Complaints</h1>
-    <h4 align="center" style="color: rgb(145, 142, 142);">Help us improve our service.</h4>
-    <hr style="border-style: double;">
-    <form style="margin-top: -5%;">
-        <table>
-            <tr>
-                <td>
-                    <label for="name">Full Name<sup style="color: red;" class="star">*</sup></label>
-                </td>
-                <td>
-                    <input type="text" placeholder="First" value="" minlength="2" maxlength="15" pattern="[a-zA-Z]{2,15}" title="Minimum 2 Characters Required and Maximum 15 characters are Allowed" required>&nbsp;&nbsp;
-                    <input type="text" placeholder="Last" value="" minlength="2" maxlength="15" pattern="[a-zA-Z]{2,15}" title="Minimum 2 Characters Required and Maximum 15 characters are Allowed" required> <br><br>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="email">Email<sup style="color: red;" class="star" >*</sup></label>
-                </td>
-                <td>
-                    <input type="email" placeholder="" style="width: 50%;" pattern="[a-z0-9]+@[a-z]+.[a-z]{2,3}$" required> <br><br>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="phone">Phone</label>
-                </td>
-                <td>
-                    <input type="text" placeholder="" value="" style="width: 50%;" pattern="[0-9]{10}" maxlength="10" required> <br><br>
-                </td>
-            </tr>
-            <tr>
-                <td> Where did we go worng?<sup style="color: red;" class="star">*</sup></td> <br><br>
-                <td><textarea name="" id="" cols="46" rows="5"></textarea></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td align="center">
-                    <input type="button" value="submit" style="background-color: red; color: white; border: hidden;">
-                </td>
-            </tr>
-        </table>
-    </form>
-</fieldset>
+    <fieldset style="height: 100%; width: 50%; margin: auto;">
+        <h1 align="center">Complaints</h1>
+        <h4 align="center" style="color: rgb(145, 142, 142);">Help us improve our service.</h4>
+        <hr style="border-style: double;">
+        <form style="margin-top: -5%;" method="post">
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Full Name<sup style="color: red;" class="star">*</sup></label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="First" value="" pattern="[a-zA-Z]{2,10}"
+                            title="Minimum 2 Characters Required and Maximum 10 characters are Allowed"
+                            required>&nbsp;&nbsp;
+                        <input type="text" placeholder="Last" value="" pattern="[a-zA-Z]{2,10}"
+                            title="Minimum 2 Characters Required and Maximum 10 characters are Allowed" required>
+                        <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email<sup style="color: red;" class="star">*</sup></label>
+                    </td>
+                    <td>
+                        <input type="email" placeholder="" style="width: 50%;"
+                            pattern="[a-zA-Z0-9]+@[a-zA-Z]+.[a-zA-Z]{2,3}$"
+                            title="Enter Email Address in Valid Format like rahul@gmail.com" required> <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone">Phone</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="" value="" style="width: 50%;" pattern="[0-9]{10}"
+                            maxlength="10" title="Enter Valid Mobile Number" required> <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td> Where did we go worng?<sup style="color: red;" class="star">*</sup></td> <br><br>
+                    <td><textarea name="" id="" cols="46" rows="5" required></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td align="center">
+                        <input type="button" value="submit"
+                            style="background-color: red; color: white; border: hidden;">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
 </body>
 
 </html>

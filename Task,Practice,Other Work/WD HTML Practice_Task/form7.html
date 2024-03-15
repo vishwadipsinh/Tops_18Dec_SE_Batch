@@ -12,15 +12,17 @@
         <caption>
             <h1 align="center">Sign Up</h1>
         </caption>
-        <form style="margin-top: -13%;">
+        <form style="margin-top: -13%;" method="post">
             <table>
                 <tr>
                     <th align="left">
                         First,Last Name*:&emsp;&emsp;
                     </th>
                     <td>
-                        <input type="text" minlength="2" maxlength="15" pattern="[a-zA-Z]{2,15}" title="Minimum 2 Characters Required and Maximum 15 characters are Allowed" required>
-                        <input type="text" minlength="2" maxlength="15" pattern="[a-zA-Z]{2,15}" title="Minimum 2 Characters Required and Maximum 15 characters are Allowed" required>
+                        <input type="text" pattern="[a-zA-Z]{2,10}"
+                        title="Minimum 2 Characters Required and Maximum 10 characters are Allowed" required>
+                        <input type="text" pattern="[a-zA-Z]{2,10}"
+                        title="Minimum 2 Characters Required and Maximum 10 characters are Allowed" required>
                     </td><br><br>
                 </tr>
                 <tr>
@@ -36,7 +38,8 @@
                         Email address*:
                     </th>
                     <td>
-                        <input type="text" style="width: 100%;" pattern="[a-z0-9]+@[a-z]+.[a-z]{2,3}$" required>
+                        <input type="text" style="width: 100%;" pattern="[a-zA-Z0-9]+@[a-zA-Z]+.[a-zA-Z]{2,3}$"
+                        title="Enter Email Address in Valid Format like rahul@gmail.com" required>
                     </td>
                 </tr>
                 <tr>
@@ -60,7 +63,7 @@
                         Cell Phone:
                     </th>
                     <td>
-                        <input type="text" style="width: 80%;" maxlength="10">
+                        <input type="text" style="width: 80%;" pattern="[0-9]{10}" maxlength="10" title="Enter Valid Mobile Number" required>
                     </td>
                 </tr>
                 <tr>
@@ -92,7 +95,7 @@
                         City*:
                     </th>
                     <td>
-                        <input type="text" style="width: 100%;" pattern="[a-zA-Z]{50}" maxlength="15" required>
+                        <input type="text" style="width: 100%;" pattern="[a-zA-Z]{1,50}" title="Enter Valid City/State Name" required>
                     </td>
                 </tr>
                 <tr>
@@ -100,7 +103,7 @@
                         State Province:
                     </th>
                     <td>
-                        <input type="text" style="width: 100%;" maxlength="30">
+                        <input type="text" style="width: 100%;" pattern="[a-zA-Z]{1,50}" title="Enter Valid City/State Name" required>
                     </td>
                 </tr>
                 <tr>
@@ -108,7 +111,8 @@
                         Zip Postal Code:
                     </th>
                     <td>
-                        <input type="text" style="width: 30%;" pattern="[0-9]{6}" maxlength="6">
+                        <input type="text" style="width: 30%;" pattern="[0-9]{6}" maxlength="6" title="Enter you 6 Digit Area/Pin/Postal/Zip Code"
+                        required>
                     </td>
                 </tr>
                 <tr>
@@ -116,7 +120,7 @@
                         Country*:
                     </th>
                     <td>
-                        <input type="text" style="width: 100%;" maxlength="30" required>
+                        <input type="text" style="width: 100%;" pattern="[a-zA-Z]{1,20}" maxlength="20" required>
                     </td>
                 </tr>
                 <tr>
@@ -124,7 +128,7 @@
                         *- required fields
                     </th>
                     <td>
-                        <input type="submit" style="width: 30%; background-color: lightgrey; " maxlength="30" >
+                        <input type="submit" style="width: 30%; background-color: lightgrey; " maxlength="30">
                     </td>
                     <td><a href="www.youtube.com">forms</a></td>
                 </tr>
@@ -132,4 +136,5 @@
         </form>
     </fieldset>
 </body>
+
 </html>

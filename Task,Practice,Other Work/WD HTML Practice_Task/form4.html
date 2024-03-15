@@ -13,147 +13,159 @@
         <h1 align="left" style="color: blue; "> Student Registration Form Using Table in HTML</h1>
     </u>
     <fieldset style="border-style: dotted; width:73%; background-color: rgb(134, 86, 179);">
-    <form >
-        <table cellspacing="0px" cellpadding="0px" align="left" style="margin-top: 0%;">
-            <div>
-            <tr>
-                <td>
-                    <label for="first name" style="width: 50%;">First Name</label>
-                </td>
-                <td>
-                    <input type="text" placeholder="Ghanendra" minlength="2" maxlength="15" pattern="[a-zA-Z]{2,15}" title="Minimum 2 Characters Required and Maximum 15 characters are Allowed" required>&nbsp;(Max 50 Characters Allowed) <br><br>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="last name" style="width: 50%;">Last Name</label>
-                </td>
-                <td>
-                    <input type="text" placeholder="Yadav" minlength="2" maxlength="15" pattern="[a-zA-Z]{2,15}" title="Minimum 2 Characters Required and Maximum 15 characters are Allowed" required>&nbsp;(Max 50 Characters Allowed) <br><br>
-                </td>
-            </tr>
-            <tr>
-            <tr>
-                <td>
-                    <label for="email" style="width: 50%;">Email ID</label>
-                </td>
-                <td>
-                    <input type="email" placeholder="yghanendra@gmail.com" pattern="[a-z0-9]+@[a-z]+.[a-z]{2,3}$" required><br><br>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="number" style="width: 50%;">Mobile Number</label>
-                </td>
-                <td>
-                    <input type="text" placeholder="7842xxxxxx" pattern="[0-9]{10}" maxlength="10" required>&nbsp;(10 Digits Allowed)<br><br>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="gender" style="width: 50%;">Gender</label>
-                </td>
-                <td>
-                    <input type="radio" name="Gender" value="Male">Male
-                    <input type="radio" name="Gender" value="Female">Female <br><br>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="dob" style="width: 50%;">Date of Birth</label>
-                </td>
-                <td>
-                    <input type="date"><br><br>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="address" style="width: 50%;">Address</label>
-                </td>
-                <td>
-                    <textarea name="Address" id="Address" cols="60" rows="8"></textarea> <br><br>
-                </td>
-            </tr>
-        </div>
-        <div>
-            <tr>
-                <td>
-                    <label for="city" style="width: 50%;">City</label>
-                </td>
-                <td>
-                    <input type="text" placeholder="Bangalore" pattern="[a-zA-Z]{50}" maxlength="50" required>&nbsp;(Max
-                    50 Characters Allowed) <br><br>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="pincode" style="width: 50%;">Pin Code</label>
-                </td>
-                <td><input type="text" placeholder="560068" pattern="[0-9]{6}" maxlength="6">&nbsp;(Max 6
-                    Numbers Allowed) <br><br>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="state" style="width: 50%;">State</label>
-                </td>
-                <td>
-                    <input type="text" placeholder="Karnataka" pattern="[a-zA-Z]{50}" maxlength="50" required>&nbsp;(Max
-                    50 Characters Allowed) <br><br>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="country" style="width: 50%;">Country</label>
-                </td>
-                <td>
-                    <input type="text" placeholder="India" pattern="[a-zA-Z]{50}" maxlength="15" required><br><br>
-                </td>
-            </tr>
-        </div>
-        <div>
-            <tr>
-                <td>
-                    <label for="Hobbies" style="width: 50%;">Hobbies</label>
-                </td>
-                <td><input type="checkbox" name="Drawing">Drawing
-                    <input type="checkbox" name="Singing">Singing
-                    <input type="checkbox" name="Dancing">Dancing
-                    <input type="checkbox" name="Sketching">Sketching <br>
-                    <input type="checkbox" name="others">others
-                    <input type="text" placeholder="EX- Teaching" maxlength="50">(Max 50 Characters Allowed) <br><br>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="Qualification" style="width: 50%;">Qualification</label>
-                </td>
-                <td><input type="checkbox"> High School(10th) <br>
-                    <input type="checkbox"> Higher School(12th) <br>
-                    <input type="checkbox"> Graduation(Bachelors) <br>
-                    <input type="checkbox">Post Graduation(Masters) <br>
-                    <input type="checkbox">Phd <br><br>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="appliedfor" style="width: 50%;">Courses Applied For</label>
-                </td>
-                <td><input type="checkbox">BCA(Bachelors of Computers applications) <br>
-                    <input type="checkbox">B.com(Bachelors of Commerce) <br>
-                    <input type="checkbox">B.SC(Bachelors of Science) <br>
-                    <input type="checkbox">BA(Bachelors of Arts) <br>
-                    <input type="checkbox">MCA(Master of Computer applications) <br>
-                    <input type="checkbox">M.Com(Master of Commerce) <br>
-                    <input type="checkbox">M.SC(Master of Science) <br>
-                    <input type="checkbox">MA(Master of Arts) <br><br>
-                    <input type="Submit" style="background-color: lightgray;">
-                    <input type="Reset" style="background-color: lightgray;">
-                </td>
-            </tr>
-        </div>
-        </table>
-        </fieldset>
+        <form method="post">
+            <table cellspacing="0px" cellpadding="0px" align="left" style="margin-top: 0%;">
+                <div>
+                    <tr>
+                        <td>
+                            <label for="first name" style="width: 50%;">First Name</label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Ghanendra" pattern="[a-zA-Z]{2,50}"
+                                title="Minimum 2 Characters Required and Maximum 50 characters are Allowed"
+                                required>&nbsp;(Max 50 Characters Allowed) <br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="last name" style="width: 50%;">Last Name</label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Yadav" pattern="[a-zA-Z]{2,50}"
+                                title="Minimum 2 Characters Required and Maximum 50 characters are Allowed"
+                                required>&nbsp;(Max 50 Characters Allowed) <br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <td>
+                            <label for="email" style="width: 50%;">Email ID</label>
+                        </td>
+                        <td>
+                            <input type="email" placeholder="yghanendra@gmail.com"
+                                pattern="[a-zA-Z0-9]+@[a-zA-Z]+.[a-zA-Z]{2,3}$"
+                                title="Enter Email Address in Valid Format like rahul@gmail.com" required><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="number" style="width: 50%;">Mobile Number</label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="7842xxxxxx" pattern="[0-9]{10}" maxlength="10"
+                                title="Enter Valid Mobile Number" required>&nbsp;(10 Digits Allowed)<br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="gender" style="width: 50%;">Gender</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="Gender" value="Male">Male
+                            <input type="radio" name="Gender" value="Female">Female <br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="dob" style="width: 50%;">Date of Birth</label>
+                        </td>
+                        <td>
+                            <input type="date"><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="address" style="width: 50%;">Address</label>
+                        </td>
+                        <td>
+                            <textarea name="Address" id="Address" cols="60" rows="8"></textarea> <br><br>
+                        </td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td>
+                            <label for="city" style="width: 50%;">City</label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Bangalore" pattern="[a-zA-Z]{1,50}"
+                                title="Enter Valid City Name" required>&nbsp;(Max
+                            50 Characters Allowed) <br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pincode" style="width: 50%;">Pin Code</label>
+                        </td>
+                        <td><input type="text" placeholder="560068" pattern="[0-9]{6}" maxlength="6"
+                                title="Enter you 6 Digit Area/Pin/Postal/Zip Code" required>&nbsp;(Max 6
+                            Numbers Allowed) <br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="state" style="width: 50%;">State</label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Karnataka" pattern="[a-zA-Z]{1,50}"
+                                title="Enter Valid State Name" required>&nbsp;(Max
+                            50 Characters Allowed) <br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="country" style="width: 50%;">Country</label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="India" pattern="[a-zA-Z]{1,20}" maxlength="20"
+                                required><br><br>
+                        </td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td>
+                            <label for="Hobbies" style="width: 50%;">Hobbies</label>
+                        </td>
+                        <td><input type="checkbox" name="Drawing">Drawing
+                            <input type="checkbox" name="Singing">Singing
+                            <input type="checkbox" name="Dancing">Dancing
+                            <input type="checkbox" name="Sketching">Sketching <br>
+                            <input type="checkbox" name="others">others
+                            <input type="text" placeholder="EX- Teaching" maxlength="50">(Max 50 Characters Allowed)
+                            <br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Qualification" style="width: 50%;">Qualification</label>
+                        </td>
+                        <td><input type="checkbox"> High School(10th) <br>
+                            <input type="checkbox"> Higher School(12th) <br>
+                            <input type="checkbox"> Graduation(Bachelors) <br>
+                            <input type="checkbox">Post Graduation(Masters) <br>
+                            <input type="checkbox">Phd <br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="appliedfor" style="width: 50%;">Courses Applied For</label>
+                        </td>
+                        <td><input type="checkbox">BCA(Bachelors of Computers applications) <br>
+                            <input type="checkbox">B.com(Bachelors of Commerce) <br>
+                            <input type="checkbox">B.SC(Bachelors of Science) <br>
+                            <input type="checkbox">BA(Bachelors of Arts) <br>
+                            <input type="checkbox">MCA(Master of Computer applications) <br>
+                            <input type="checkbox">M.Com(Master of Commerce) <br>
+                            <input type="checkbox">M.SC(Master of Science) <br>
+                            <input type="checkbox">MA(Master of Arts) <br><br>
+                            <input type="Submit" style="background-color: lightgray;">
+                            <input type="Reset" style="background-color: lightgray;">
+                        </td>
+                    </tr>
+                </div>
+            </table>
+    </fieldset>
     </form>
 </body>
 

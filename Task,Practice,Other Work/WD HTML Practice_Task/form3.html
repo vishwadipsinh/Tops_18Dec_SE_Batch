@@ -10,15 +10,17 @@
 <body>
     <fieldset style="width: 30%;">
         <legend align="left">Customer</legend>
-        <Form align="left">
+        <Form align="left" method="post">
             <table cellspacing="5px" align="left">
                 <tr align="left">
                     <td>Name<sup style="color: red;" class="star">*</sup></td>
-                    <td><input type="text" style="width: 100%;" minlength="2" maxlength="15" pattern="[a-zA-Z]{2,15}" title="Minimum 2 Characters Required and Maximum 15 characters are Allowed" required></td>
+                    <td><input type="text" style="width: 100%;" pattern="[a-zA-Z]{2,10}"
+                            title="Minimum 2 Characters Required and Maximum 10 characters are Allowed" required></td>
                 </tr>
                 <tr align="left">
                     <td>Email<sup style="color: red;" class="star">*</sup></td>
-                    <td><input type="email" style="width: 100%;" pattern="[a-z0-9]+@[a-z]+.[a-z]{2,3}$" required></td>
+                    <td><input type="email" style="width: 100%;" pattern="[a-zA-Z0-9]+@[a-zA-Z]+.[a-zA-Z]{2,3}$"
+                            title="Enter Email Address in Valid Format like rahul@gmail.com" required></td>
                 </tr>
                 <tr align="left">
                     <td>Investment</td>

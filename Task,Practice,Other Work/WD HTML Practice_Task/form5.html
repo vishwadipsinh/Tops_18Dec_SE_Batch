@@ -11,15 +11,18 @@
     <h1>Membership applications</h1>
     <h3 style="color: rgb(98, 96, 94);"> To apply for Membership please complete All questions. </h3>
     <hr width="50%" align="left">
-    <form>
+    <form method="post">
         <table>
             <tr>
                 <td>
                     <label for="name">Name</label>
                 </td>
                 <td>
-                    <input type="text" placeholder="First name " value=""> &nbsp;&nbsp;
-                    <input type="text " placeholder="Last name" value=""> <br><br>
+                    <input type="text" placeholder="First name " value="" pattern="[a-zA-Z]{2,10}"
+                        title="Minimum 2 Characters Required and Maximum 10 characters are Allowed" required>
+                    &nbsp;&nbsp;
+                    <input type="text " placeholder="Last name" value="" pattern="[a-zA-Z]{2,10}"
+                        title="Minimum 2 Characters Required and Maximum 10 characters are Allowed" required> <br><br>
                 </td>
             </tr>
             <tr>
@@ -41,14 +44,17 @@
             <tr>
                 <td></td>
                 <td>
-                    <input type="text" placeholder="City" value="" style="width: 47%;">
-                    <input type="text" placeholder="State/Province" value="" style="width: 47%;"><br><br>
+                    <input type="text" placeholder="City" value="" style="width: 47%;" pattern="[a-zA-Z]{1,50}"
+                        title="Enter Valid City Name" required>
+                    <input type="text" placeholder="State/Province" value="" style="width: 47%;"
+                        pattern="[a-zA-Z]{1,50}" title="Enter Valid State Name" required><br><br>
                 </td>
             </tr>
             <tr>
                 <td></td>
                 <td>
-                    <input type="text" placeholder="Postal/Zip code" value="" style="width: 47%;">
+                    <input type="text" placeholder="Postal/Zip code" value="" style="width: 47%;" pattern="[0-9]{6}"
+                        maxlength="6" title="Enter you 6 Digit Area/Pin/Postal/Zip Code" required>
                     <select>
                         <option>Please Select</option>
                         <option value="China">China</option>
@@ -62,8 +68,9 @@
                     <label for="email">Email</label>
                 </td>
                 <td>
-                    <input type="email" placeholder="ex. myname@example.com" maxlength="30" value=""
-                        style="width: 100%;">
+                    <input type="email" placeholder="ex. myname@example.com" value="" style="width: 100%;"
+                        pattern="[a-zA-Z0-9]+@[a-zA-Z]+.[a-zA-Z]{2,3}$"
+                        title="Enter Email Address in Valid Format like rahul@gmail.com" required>
                     <br><br>
                 </td>
             <tr>

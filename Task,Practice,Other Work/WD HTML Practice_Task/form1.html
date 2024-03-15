@@ -21,23 +21,25 @@
                 </tr>
                 <tr align="left">
                     <td>
-                        <input type="text" placeholder="Firstname" style="width: 100%;" maxlength="15"
-                            pattern="[a-zA-Z]" required>
+                        <input type="text" placeholder="Firstname" style="width: 100%;" pattern="[a-zA-Z]{2,10}"
+                            title="Minimum 2 Characters Required and Maximum 10 characters are Allowed" required>
                     </td>
                 </tr>
                 <tr align="left">
                     <td>Middlename :</td>
                 </tr>
                 <tr align="left">
-                    <td><input type="text" placeholder="Middlename" style="width:100%;" maxlength="15"
-                        pattern="[a-zA-Z]" required><br><br></td>
+                    <td><input type="text" placeholder="Middlename" style="width:100%;" pattern="[a-zA-Z]{2,10}"
+                            title="Minimum 2 Characters Required and Maximum 10 characters are Allowed"
+                            required><br><br></td>
                 </tr>
                 <tr align="left">
                     <td>Lastname :</td>
                 </tr>
                 <tr align="left">
-                    <td><input type="text" placeholder="Lastname" style="width:100%;" maxlength="15"
-                        pattern="[a-zA-Z]" required><br><br></td>
+                    <td><input type="text" placeholder="Lastname" style="width:100%;" pattern="[a-zA-Z]{2,10}"
+                            title="Minimum 2 Characters Required and Maximum 10 characters are Allowed"
+                            required><br><br></td>
                 </tr>
                 <tr align="left">
                     <td>
@@ -66,15 +68,9 @@
                 <tr align="left">
                     <td>
                         <label for="phone">Phone :</label>
-                        <input type="text" placeholder="Number" pattern="[0-9]{10}" maxlength="10" required><br><br>
+                        <input type="text" placeholder="Number" pattern="[0-9]{10}" maxlength="10"
+                            title="Enter Valid Mobile Number" required><br><br>
                         <input type="text" placeholder="phone no." style="width:100%;"><br><br>
-
-
-
-                        <!-- <textarea name="" id="number" cols="70" rows="1" placeholder="+91"></textarea>
-                        <textarea name="" id="number" cols="70" rows="1" placeholder="phone no" value="+91"></textarea> -->
-                        <!-- <input type="text" value="+91"><br><br>
-                        <input type="text" placeholder="phone no." -->
                     </td>
                 </tr>
                 <tr align="left">
@@ -88,21 +84,29 @@
                 <tr align="left">
                     <td>
                         <label for="email">Email</label><br>
-                        <input type="email" placeholder="Enter Email" style="width:100%;" pattern="[a-z0-9]+@[a-z]+.[a-z]{2,3}$" required>
+                        <input type="email" placeholder="Enter Email" style="width:100%;"
+                            pattern="[a-zA-Z0-9]+@[a-zA-Z]+.[a-zA-Z]{2,3}$"
+                            title="Enter Email Address in Valid Format like rahul@gmail.com" required>
                         <br><br>
                     </td>
                 </tr>
                 <tr align="left">
                     <td>
                         <label for="Password">Password</label><br>
-                        <input type="password" placeholder="Enter Password" style="width:100%;" minlength="8" maxlength="25" required>
+                        <input type="password" placeholder="Enter Password" style="width:100%;" minlength="8"
+                            maxlength="25"
+                            title="Minimum Password Length of 8 Words are Required and Maximum Length upto 25 Words Allowed"
+                            required>
                         <br><br>
                     </td>
                 </tr>
                 <tr align="left">
                     <td>
                         <label for="Password">Re-type Password</label><br>
-                        <input type="password" placeholder="Re-type Password" style="width:100%;" minlength="8" maxlength="25" required>
+                        <input type="password" placeholder="Re-type Password" style="width:100%;" minlength="8"
+                            maxlength="25"
+                            title="Minimum Password Length of 8 Words are Required and Maximum Length upto 25 Words Allowed"
+                            required>
                         <br><br>
                     </td>
                 </tr>
@@ -110,6 +114,11 @@
                     <td>
                         <input type="button" value="Register"
                             style="width:100%; background-color: green; color: white;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit">
                     </td>
                 </tr>
             </table>
