@@ -1,37 +1,63 @@
+/* Apply CSS reset to all elements */
 * {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
 }
 
+/* Styling for the entire HTML document and body */
 html,
 body {
-  display: grid;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px; /* Vertical gap between elements */
+  height: 100%; /* Full height of the viewport */
   place-items: center;
-  background: #000;
+  background: #000; /* Black background */
 }
 
-.wrapper {
-  height: 100px;
-  width: 360px;
-  position: relative;
-  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
-  border-radius: 10px;
-  cursor: default;
-  animation: animate 1.5s linear infinite;
+/* Styling for the element with id 'daycontainer' (which shows Day,Month,Year)*/
+#daycontainer {
+  display: flex;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif !important; /* Override font-family */
+  align-items: center;
+  height: 75px; /* Fixed height */
+  width: 380px; /* Fixed width */
+  background: rgb(5, 110, 111); /* Background color */
+  background: linear-gradient(0deg, rgba(5, 110, 111, 1) 0%, rgba(74, 209, 214, 1) 100%); /* Gradient background */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: 5px solid #a8dadc; /* Border */
 }
 
-.wrapper .display,
-.wrapper span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+/* Styling for the time container */
+.timecontainer {
+  height: 100px; /* Fixed height */
+  width: 360px; /* Fixed width */
+  position: relative; /* Positioning context */
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0); /* Gradient background */
+  border-radius: 10px; /* Rounded corners */
+  cursor: default; /* Default cursor */
+  animation: animate 1.5s linear infinite; /* Animation properties */
 }
 
-.wrapper .display {
-  z-index: 999;
+/* Styling for elements inside .timecontainer */
+.timecontainer .display,
+.timecontainer span {
+  position: absolute; /* Absolute positioning */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the element */
+}
+
+/* Styling for the time display */
+.timecontainer .display {
+  z-index: 999; /* Higher stacking order for showing on Upper Side*/
   height: 85px;
   width: 345px;
   background: #1b1b1b;
@@ -41,33 +67,34 @@ body {
 
 .display #time {
   line-height: 85px;
-  color: #fff;
+  color: #fff; /* Text color */
   font-size: 50px;
   font-weight: 600;
   letter-spacing: 1px;
-  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: animate 1.5s linear infinite;
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0); /* Gradient text color */
+  -webkit-background-clip: text; /* Clip text to background */
+  -webkit-text-fill-color: transparent; /* Transparent text fill */
+  animation: animate 1.5s linear infinite; /* Animation properties */
 }
 
+/* Animation for hue rotation */
 @keyframes animate {
   100% {
-    filter: hue-rotate(360deg);
+      filter: hue-rotate(360deg);
   }
 }
 
-.wrapper span {
+.timecontainer span {
   height: 100%;
   width: 100%;
   border-radius: 10px;
-  background: inherit;
+  background: inherit; /* Inherit parent background */
 }
 
-.wrapper span:first-child {
-  filter: blur(7px);
+.timecontainer span:first-child {
+  filter: blur(7px); /* Blur effect */
 }
 
-.wrapper span:last-child {
-  filter: blur(20px);
+.timecontainer span:last-child {
+  filter: blur(20px); /* Stronger blur effect */
 }
