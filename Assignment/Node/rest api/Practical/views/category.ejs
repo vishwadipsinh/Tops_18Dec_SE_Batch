@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="display: flex; ">
+        <div style="padding: 100px;">
+
+            <h1>Category Form</h1>
+            <form action="/category/add" method="post">
+                <input type="hidden" name="catid" value="<%= editcat._id%>">
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Category</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" name="name"
+                            placeholder="Enter category" value="<%= editcat.name%>">
+
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </form>
+            <br><br>
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% catdata.map((i)=>{ %>
+                        <tr>
+                            <td>
+                                <%= i._id %>
+                            </td>
+                            <td>
+                                <%= i.name%>
+                            </td>
+                            <td>
+                                <a href="/category/edit/<%= i._id%>">Edit</a>
+                                <a href="/category/del/<%= i._id%>">Delete</a>
+                            </td>
+                        </tr>
+                        <% })%>
+                </tbody>
+            </table>
+        </div>
+        <div style="padding: 100px;">
+            <form action="/subcategory/add" method="post" enctype="multipart/form-data">
+                <select name="category" id="category">
+                    <% catdata.map((i)=>{ %>
+                        <option value="<%= i._id %>" <%=editsubcat?.category?.toString()===i._id.toString() ? 'selected'
+                            : '' %>>
+                            <%= i.name%>
+                        </option>
+                        <% })%>
+                </select>
+                <input type="hidden" name="subcatid" value="<%= editsubcat._id%>">
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1"> Sub Category</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" name="name"
+                            placeholder="Enter sub category" value="<%= editsubcat.name%>">
+
+                    </div>
+                    <!-- for Image -->
+                    <div class="form-group">
+                        <label for="">Image:</label>
+                        <input type="file" name="subcatimg" id="subcatimg">
+                        <img height="100px" width="100px" src="../../uploads/<%= editsubcat.subcatimg%>">
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+
+            </form>
+            <br><br>
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% subcatdata?.map((i)=>{ %>
+                        <tr>
+                            <td>
+                                <%= i._id %>
+                            </td>
+                            <td>
+                                <img height="50px" width="50px" src="../../uploads/<%= i.subcatimg%>">
+                            </td>
+
+                            <td>
+                                <%= i.category.name%>
+                            </td>
+                            <td>
+                                <%= i.name%>
+                            </td>
+                            <td>
+                                <a href="/subcategory/edit/<%= i._id%>">Edit</a>
+                                <a href="/subcategory/del/<%= i._id%>">Delete</a>
+                            </td>
+                        </tr>
+                        <% })%>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>
